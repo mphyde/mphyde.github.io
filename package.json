@@ -1,0 +1,11 @@
+{
+  "name": "matthyde.co.uk",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "bundle exec jekyll serve"
+  },
+  "main": "gulpfile.js",
+  "repository": "https://github.com/mphyde/mphyde.github.io.git",
+  "author": "Jessica Johnston <jessjohnstonuk@gmail.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,129 @@
+$page_template: 'page_holding';
+
+.#{$page_template} {
+  $spacing: 5vh;
+  // ----------
+  background-image: url(../img/header-about.jpg);
+  background-size: cover;
+  background-position: 85% 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: stretch;
+  @media (orientation: landscape) {
+    background-position: center;
+  }
+
+  a {
+    color: map-get($brand, white);
+    transition: color 0.15s ease-out;
+    @include responsive(xl) {
+      &:hover {
+        color: map-get($brand, red);
+      }
+    }
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 43px;
+    letter-spacing: 0.2em;
+    @include responsive(xl) {
+      font-size: 58px;
+    }
+    @include responsive(xxl) {
+      font-size: 78px;
+    }
+  }
+
+  .coming_soon {
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    @media (orientation: landscape) {
+      margin: unset;
+    }
+    @include responsive(xl) {
+      font-size: 18px;
+    }
+    @include responsive(xxl) {
+      font-size: 22px;
+    }
+  }
+
+  .content {
+    text-align: center;
+    padding: $spacing 30px;
+    background: rgba(0, 0, 0, 1);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    @media (orientation: landscape) {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      width: 80%;
+      height: 100vh;
+      padding-left: $spacing * 3;
+      text-align: left;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    }
+    @include responsive(xxl) {
+      padding-left: 30px;
+      width: 100%;
+
+      > * {
+        max-width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    @media (orientation: landscape) {
+      justify-content: flex-start;
+    }
+
+    &-item {
+      font-size: 20px;
+      margin: $spacing 15px 0;
+      @media (orientation: landscape) {
+        margin: ($spacing * 1.5) 15px 0;
+      }
+      @media (min-width: map-get($breakpoint, md)) and (orientation: landscape) {
+        margin: 30px 15px 0;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+      
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .title {
+    margin-bottom: $spacing;
+    @media (orientation: landscape) {
+      margin-bottom: $spacing * 1.5;
+    }
+    @media (min-width: map-get($breakpoint, md)) and (orientation: landscape) {
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 20px;
+      @include responsive(xl) {
+        font-size: 28px;
+      }
+      @include responsive(xxl) {
+        font-size: 32px;
+      }
+    }
+  }
+}

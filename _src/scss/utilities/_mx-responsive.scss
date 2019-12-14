@@ -1,0 +1,31 @@
+@mixin responsive($brkpt, $direction: up) {
+
+  @if map-has-key($breakpoint , $brkpt) {
+    @if $direction == up {
+      @media screen and (min-width: map-get($breakpoint, $brkpt)) {
+        @content;
+      }
+    }
+    
+    @else {
+      @media screen and (max-width: map-get($breakpoint, $brkpt)) {
+        @content;
+      }
+    }
+  }
+
+  @else {
+    @if $direction == up {
+      @media screen and (min-width: $brkpt) {
+        @content;
+      }
+    }
+    
+    @else {
+      @media screen and (min-width: $brkpt) {
+        @content;
+      }
+    }
+  }
+
+}

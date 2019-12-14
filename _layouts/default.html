@@ -1,0 +1,23 @@
+{% include functions/body_class.html %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+  <head>
+    {% include components/head/meta.html %}
+    {% include components/head/link.html %}
+    <title>{{ site.title }}</title>
+  </head>
+
+
+
+
+  <body class="{{ body_class }}">
+    {{ content }}
+  </body>
+
+
+
+</html>

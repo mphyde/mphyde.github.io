@@ -1,0 +1,15 @@
+<!-- class="{{ layout.body_class }}{{ page.body_class | prepend: " " }}" -->
+
+{% assign body_class = null%}
+
+{% if layout.body_class %}
+  {% if page.body_class %}
+    {% assign body_class = body_class | append: layout.body_class | append: " " %}
+  {% else %}
+    {% assign body_class = body_class | append: layout.body_class %}
+  {% endif %}
+{% endif %}
+
+{% if page.body_class %}
+  {% assign body_class = body_class | append: page.body_class | append: " " %}
+{% endif %}
