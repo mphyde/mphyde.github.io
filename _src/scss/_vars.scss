@@ -1,0 +1,65 @@
+// ------------------------------
+// RESPONSIVE BREAKPOINTS
+// ------------------------------
+
+
+$breakpoint: (
+  xs:   000px,  // mobile portrait
+  sm:   425px,  // mobile landscape
+  md:   768px,  // tablet portrait
+  lg:   1024px, // tablet landscape
+  xl:   1150px, // small desktop + ipad pro 12"
+  xxl:  1680px, // large desktop
+);
+
+
+
+
+
+
+
+
+
+// ------------------------------
+// TYPOGRAPHY
+// ------------------------------
+
+
+// import fonts
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+
+
+
+// set font framework
+
+$font-family: (
+  heading:  ('Oswald', sans-serif),
+  body:     ('Open Sans Condensed', sans-serif),
+);
+
+$font-weight: (
+  regular:  300,
+  bold:     400,
+);
+
+
+
+
+
+
+
+
+
+// ------------------------------
+// COLOUR PALETTE
+// ------------------------------
+
+
+$brand: (
+  red:    #ba2c33,
+  white:  #f0f0f0,
+  black:  #3c3c3c,
+);

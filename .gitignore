@@ -1,0 +1,10 @@
+# ignore directories
+
+_site/
+node_modules/
+
+
+
+
+# ignore files
+.DS_Store

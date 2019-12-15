@@ -1,0 +1,25 @@
+---
+layout: default
+body_class: page_holding
+---
+
+
+<div class="content">
+  <div class="title">
+    <h1>Matt <strong>Hyde</strong></h1>
+    <p>Music Producer</p>
+  </div>
+
+  <p class="coming_soon">New website coming soon</p>
+
+  <div class="social">
+    {% assign socials = site.social | sort: "position" %}
+    {% for item in socials %}
+      <div class="social-item">
+        <a href="{{ item.url }}" target="_blank" rel="external">
+          {{ item.icon }}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>

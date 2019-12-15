@@ -1,0 +1,57 @@
+# c
+
+collections:
+  social:
+    output: false
+
+
+# d
+
+defaults:
+- scope:
+    path: ''
+  values:
+    layout: default
+- scope:
+    path: ''
+    type: social
+  values:
+    icon:
+    url:
+
+
+# i
+
+incremental: true
+
+
+# j
+
+jekyll_admin:
+  hidden_links:
+  - posts
+  - staticfiles
+  - datafiles
+  - configuration
+
+
+# l
+
+livereload: true
+
+
+# p
+
+profile: true
+
+
+# s
+
+safe: true
+sass:
+  sass_dir: _src/scss
+
+
+# t
+
+title: Matt Hyde | Music producer | London, UK
