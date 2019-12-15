@@ -1,3 +1,9 @@
+# a
+autoprefixer:
+  browsers:
+  - last 2 versions
+
+
 # c
 
 collections:
@@ -42,6 +48,8 @@ livereload: true
 
 # p
 
+plugins:
+- jekyll-autoprefixer
 profile: true
 
 
